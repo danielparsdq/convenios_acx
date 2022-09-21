@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConveniosApi</name>
+    </assembly>
+    <members>
+        <member name="M:ConveniosApi.Controllers.AuthController.Post(ConveniosApi.Services.LoginData)">
+            <summary>
+            Login del usuario
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Controllers.ConveniosController.GetConvenios(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Lista los convenios médicos
+            </summary>
+            <param name="filter"></param>
+            <param name="sortBy"></param>
+            <param name="sort"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Controllers.ConveniosController.Get(System.Int64)">
+            <summary>
+            Obtiene los detalles de un convenio con el ID
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Controllers.ConveniosController.Post(ConveniosApi.Models.ConveniosModels.ConvenioModel)">
+            <summary>
+            Crea un convenio médico
+            </summary>
+            <param name="convenio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Controllers.ConveniosController.Put(ConveniosApi.Models.ConveniosModels.ConvenioModel)">
+            <summary>
+            Actualiza los datos del convenio generando una nueva versión
+            </summary>
+            <param name="convenio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Controllers.ConveniosController.Delete(System.Int64)">
+            <summary>
+            Elimina lógicamente un convenio
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Controllers.ConveniosController.GetHistory(System.Int64)">
+            <summary>
+            Obtiene el histórico de un convenio
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Helpers.FunctionsHelper.GetLinks(System.Int32,System.Int32,Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Genera los links en una respuesta
+            </summary>
+            <param name="page"></param>
+            <param name="total"></param>
+            <param name="Request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Helpers.FunctionsHelper.Sha1(System.String)">
+            <summary>
+            Genera el SHA1 de una cadena
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Helpers.FunctionsHelper.BadRequest(System.Exception,Microsoft.Extensions.Localization.IStringLocalizer)">
+            <summary>
+            Genera la respuesta con excepciones
+            </summary>
+            <param name="ex"></param>
+            <param name="_localizer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConveniosApi.Helpers.FunctionsHelper.Paginate``1(System.Linq.IQueryable{``0},System.Int32)">
+            <summary>
+            Genera la paginación de un query
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ConveniosApi.ServiciosAcromaxEntities.SysUsuario.Lineas">
+            <summary>
+            Líneas que maneja
+            </summary>
+        </member>
+    </members>
+</doc>

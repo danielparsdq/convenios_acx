@@ -1,0 +1,2 @@
+﻿dotnet ef dbcontext scaffold "Server=localhost;Database=convenios_medicos;User=root;Password=root;TreatTinyAsBoolean=true" "Pomelo.EntityFrameworkCore.MySql" -o ConveniosMedicosEntities -f
+dotnet ef dbcontext scaffold "Server=localhost;Database=servicios_acromax;User=root;Password=root;TreatTinyAsBoolean=true" "Pomelo.EntityFrameworkCore.MySql" -o ServiciosAcromaxEntities -f
